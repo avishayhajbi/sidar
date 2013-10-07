@@ -8,7 +8,7 @@ AUTH_PROFILE_MODULE = 'backoffice.UserProfile'
 
 DBBACKUP_STORAGE = 'dbbackup.storage.filesystem_storage'
 DBBACKUP_FILESYSTEM_DIRECTORY = '~/Backup'
-SOUTH_TESTS_MIGRATE = False
+SOUTH_TESTS_MIGRATE = True
 # PORTFOLIO_CSV_ROOT = "/Users/danielbraun/Development/design26d"
 # PORTFOLIO_CSV_ROOT = u'/Volumes/m$/D/המכון לעיצוב/מחלקות עיצוב'
 # DEBUG = True
@@ -130,7 +130,7 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.locale.LocaleMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
+    # 'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
 
 ROOT_URLCONF = 'sidar.urls'
@@ -156,6 +156,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
+    'moderation',
     'backoffice',
     'south',
     'imagekit',
@@ -181,8 +182,8 @@ INSTALLED_APPS = (
     'articles',
     'videos',
     'events',
-    'moderation',
-    'debug_toolbar',
+    # 'debug_toolbar',
+    'importer',
 )
 
 # A sample logging configuration. The only tangible logging

@@ -73,6 +73,7 @@ urlpatterns = patterns(
     (r'^feedback/', include('feedback.urls')),
     (r'^tinymce/', include('tinymce.urls')),
     (r'^accounts/', include('registration.backends.simple.urls')),
+    url(regex=r'^importer/', view=include('importer.urls')),
     (r'^users/', RedirectView.as_view(url="/")),
     (r'^new/$', TemplateView.as_view(template_name="new/index.html")),
     (r'^logout/$', logout),

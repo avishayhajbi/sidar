@@ -12,10 +12,6 @@ td .thumbnail {
 	margin: 0 auto;
 }
 
-.actions {
-	display: none;
-}
-
 .results~.actions {
 	display: inherit;
 }
