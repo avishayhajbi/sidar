@@ -3,7 +3,7 @@ from fabric.api import *
 
 env.hosts = ['sidar@10.0.10.4']
 DESIGN26_HOSTNAME = 'design26.local'
-github_repo = 'https://github.com/danielbraun/sidar.git'
+github_repo = 'https://github.com/avishayhajbi/sidar.git'
 design26m_mount_point = '/mnt/design26m'
 source = 'source bin/activate && '
 
